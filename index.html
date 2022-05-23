@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/cbo6cfw.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/cbo6cfw.css" />
+    <link rel="shortcut icon" href="images/universal.ico" type="image/x-icon" />
     <title>Engineering Website</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="glass">
             <div class="nav-container">
                 <h1 class="nav-heading">FEBTECH</h1>
                 <div class="menu">
@@ -22,10 +23,10 @@
                     <a href="#">Contact</a>
                 </div>
                 <button class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
             </div>
         </nav>
     </header>
@@ -39,7 +40,36 @@
     <!-- HOME PAGE - HERO -->
     <section class="home-main">
         <h1 class="hero-name">FEBTECH ENGINEERING WORKS</h1>
-        <P class="hero-subtitle">You Imagine, We Create.</P>
+        <p class="hero-subtitle">You Imagine, We Create.</p>
+        <li class="heading-button">
+            <button class="button button-heading">
+          <span><span>Learn More</span></span>
+        </button>
+        </li>
+    </section>
+
+    <!-- About Us Page Design -->
+
+    <section class="about-section">
+        <h1 class="about-heading">ABOUT US</h1>
+        <div class="about-main">
+            <div class="about-image">
+                <img src="images/vertical-welding.jpg" alt="" />
+            </div>
+            <div class="about-text">
+                <h4 class="about-text-h4">
+                    Fabrication Erection & Mechanical Engineering.
+                </h4>
+                <p class="about-text-p">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse assumenda natus dignissimos nesciunt explicabo ut ipsam necessitatibus tenetur enim sequi voluptatum, dolorem quas.
+                    <span class="read-more-text">Repudiandae, deserunt? Veniam dignissimos magnam eligendi odit optio ab
+                    unde explicabo alias eius aut distinctio aspernatur repellendus corporis eum, libero provident omnis accusantium a nisi rem aliquam quos. Culpa minima eaque voluptate quia nemo, explicabo corporis quidem, sint possimus ipsam consequatur
+                    eum reiciendis. Dicta mollitia accusantium quam.</span>
+                    <span class="read-more-button">Read More...</span>
+                </p>
+                <button class="btn-about"><span><span>Read More</span></span></button>
+            </div>
+        </div>
     </section>
 
     <!-- HOME PAGE - 2ND -->
@@ -49,28 +79,27 @@
                 <h1>Our Services</h1>
             </div>
             <div class="services-main">
-                <div class="box">
-
+                <div class="box glass">
                     <div class="icon">01</div>
                     <div class="content">
-                        <h3>Blockchain</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 id="box-title">Blockchain</h3>
+                        <p id="box-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box glass">
                     <div class="icon">02</div>
                     <div class="content">
-                        <h3>Graphic Design</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 id="box-title">Graphic Design</h3>
+                        <p id="box-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box glass">
                     <div class="icon">03</div>
                     <div class="content">
-                        <h3>Finance</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 id="box-title">Finance</h3>
+                        <p id="box-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </div>
@@ -81,7 +110,7 @@
     <section class="project-counter">
         <div class="counter-container">
             <div class="numbers">
-                <h2 class="counter-numbers">500+</h2>
+                <h2 class="counter-numbers" data-target="500+">500+</h2>
                 <p>Projects Completed</p>
             </div>
 
@@ -101,6 +130,7 @@
             </div>
         </div>
     </section>
+
     <script src="JS/script.js"></script>
 </body>
 
