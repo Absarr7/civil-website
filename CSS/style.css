@@ -332,7 +332,8 @@ nav {
     overflow: hidden;
 }
 
-.about-text-p {
+.about-text-p,
+.read-more-text {
     font-family: 'poppins', sans-serif;
     padding-top: 10px;
     padding-right: 41px;
@@ -601,10 +602,11 @@ nav {
     }
     .about-text {
         width: 100%;
-        text-align: center;
+        /* text-align: center; */
     }
     .about-text-p {
-        padding-right: 0px;
+        padding-right: 21px;
+        padding-left: 19px;
     }
     .read-more-text {
         display: none;
@@ -617,5 +619,8 @@ nav {
     }
     .about-text-p.show-more .read-more-text {
         display: inline;
+    }
+    .btn-about {
+        left: 31%;
     }
 }
